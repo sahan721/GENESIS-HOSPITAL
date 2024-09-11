@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHARMACY</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00385b">
+    <meta name="msapplication-TileColor" content="#00385b">
+    <meta name="theme-color" content="#00385b">
+    <link rel="stylesheet" href="./Pharmacy.css">
+    <link rel="stylesheet" href="./Reset_style_sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,400;0,500;0,700;0,900;1,100;1,200;1,400;1,500;1,700;1,900&display=swap">
+</head>
+
+<header>
+    <!--menu-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w2.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 221-221-221-221 42-42 221 221 221-221 42 42-221 221 221 221-42 42-221-221-221 221Z" />
+                    </svg></a></li>
+            <li><a href="./Index.html">Home</a></li>
+            <li><a href="./Aboutus.html">About Us</a></li>
+            <li><a href="./Srevices.html">Services</a></li>
+            <li><a href="./Doctors.html">Doctors</a></li>
+            <li><a href="./Reservation.html">Reservations</a></li>
+            <li><a href="">Pharmacy</a></li>
+            <li><a href="./Payments.html">Payments</a></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li class="hideOnMobile"><a href="./Index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./Aboutus.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="./Srevices.html">Services</a></li>
+            <li class="hideOnMobile"><a href="./Doctors.html">Doctors</a></li>
+            <li class="hideOnMobile"><a href="./Reservation.html">Reservations</a></li>
+            <li class="hideOnMobile"><a href="./Pharmacy.html">Pharmacy</a></li>
+            <li class="hideOnMobile"><a href="./Payments.html">Payments</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href=""><svg xmlns="http://www.w2.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <!--logo-->
+    <section class="logo">
+        <a href="./Index.html"><img src="./images/logo.png"></a>
+    </section>
+
+    <!--search bar-->
+
+    <section class="box">
+
+
+        <input type="search" placeholder="search...">
+        <form action="https://www.google.com/search" method="get" class="search-bar">
+            <a type="submit">
+                <img src="./images/search.png">
+            </a>
+        </form>
+    </section>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</header>
+<!--pharmacy-->
+
+<body>
+    <h1>Pharmacy</h1>
+
+    <div id="card-area">
+        <div class="wrapper">
+            <div class="box-area">
+                <div class="box-areaa">
+                    <p class="top"><b>Panadol Tablets 10's</b></p>
+                    <img class="one" src="./images/pharmacy/m12.png" alt="Panadol Tablets 10's">
+
+                    <div class="overlay">
+                        <h3>Unit Price $12</h3>
+                        <p>Panadol Tablets are a popular medication containing acetaminophen, used to
+                            relieve mild to moderate pain and reduce fever. and other pains.</p><a
+                            href="./Phar-pay.html"><i class="fa fa-shopping-cart" aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Diabetes Tablets 50's</b></p>
+                    <img class="one" src="./images/pharmacy/m11.png" alt="Diabetes Tablets 50's">
+                    <div class="overlay">
+                        <h3>Unit Price $12</h3>
+                        <p>Diabetes tablets are medications designed to manage blood sugar levels in individuals with
+                            diabetes.They are often used alongside lifestyle changes.</p><a href="./Phar-pay.html"><i
+                                class="fa fa-shopping-cart" aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Immunity Tablets 60's</b></p>
+                    <img class="one" src="./images/pharmacy/m10.png" alt="Immunity Tablets 60's">
+                    <div class="overlay">
+                        <h3>Unit Price $14</h3>
+                        <p>Immunity tablets are dietary supplements formulated system.
+                            They contain vitamins and antioxidants that the body'sdefenses, and help prevents.</p><a
+                            href="./Phar-pay.html  "><i class="fa fa-shopping-cart" aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Vitamin D3 Tablets 10's</b></p>
+                    <img class="one" src="./images/pharmacy/m9.png" alt="Vitamin D3 Tablets 10's">
+                    <div class="overlay">
+                        <h3>Unit Price $16</h3>
+                        <p>Vitamin D3 tablets are provide the essential nutrient vitamin D3 helps phosphorus levels in
+                        </p>
+                        <a href="./Phar-pay.html"><i class="fa fa-shopping-cart" aria-hidden="true"> Buy</i></a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Paracetamol 15g</b></p>
+                    <img class="one" src="./images/pharmacy/m8.png" alt="Paracetamol 15g">
+                    <div class="overlay">
+                        <h3>Unit Price $6</h3>
+                        <p>Paracetamol is used medication that provides effective from pain and fever.
+                            It works by inhibiting the production.</p>
+                        <a href="./Phar-pay.html"><i class="fa fa-shopping-cart" aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Hand Sanitizer 500ml</b></p>
+                    <img class="one" src="./images/pharmacy/m7.png" alt="Hand Sanitizer 500ml">
+                    <div class="overlay">
+                        <h3>Unit Price $20</h3>
+                        <p>Hand sanitizer is a portable, alcohol-based solution designed to kill germs and bacteria on
+                            the skin.</p><a href="./Phar-pay.html"><i class="fa fa-shopping-cart" aria-hidden="true">
+                                Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Liquid Soap 800ml</b></p>
+                    <img class="one" src="./images/pharmacy/m6.png" alt="Liquid Soap 800ml"
+                        style="width: 30vh; height: auto; margin-left: 12vh; margin-top: 2vh;">
+                    <div class="overlay">
+                        <h3>Unit Price $26</h3>
+                        <p>Liquid soap is a versatile, often antibacterial cleaning agent designed for handwashing and
+                            body cleansing.</p><a href="./Phar-pay.html"><i class="fa fa-shopping-cart"
+                                aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Ayurvedic Soap 180g</b></p>
+                    <img class="one" src="./images/pharmacy/m5.png" alt="Ayurvedic Soap 180g">
+                    <div class="overlay">
+                        <h3>Unit Price $25</h3>
+                        <p>Ayurvedic soap combines natural herbs and traditional remedies to gently cleanse and nourish
+                            skin wellness.</p><a href="./Phar-pay.html"><i class="fa fa-shopping-cart"
+                                aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Moisturizer Cream 100g</b></p>
+                    <img class="one" src="./images/pharmacy/m4.png" alt="Moisturizer Cream 100g">
+                    <div class="overlay">
+                        <h3>Unit Price $30</h3>
+                        <p>Moisturizer cream hydrates and nourishes the skin, improving texture and maintaining a
+                            healthy appearance.</p><a href="./Phar-pay.html"><i class="fa fa-shopping-cart"
+                                aria-hidden="true">
+                                Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Shampoo & Conditionoe 110g</b></p>
+                    <img class="one" src="./images/pharmacy/m3.png" alt="Shampoo & Conditionoe 110g">
+                    <div class="overlay">
+                        <h3>Unit Price $32</h3>
+                        <p>Shampoo and conditioner cleanse and nourish hair, enhancing shine and manageability while
+                            addressing issues like dryness, frizz, and damage.</p><a href="./Phar-pay.html"><i
+                                class="fa fa-shopping-cart" aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Sun Cream 180g</b></p>
+                    <img class="one" src="./images/pharmacy/m2.png" alt="Sun Cream 180g">
+                    <div class="overlay">
+                        <h3>Unit Price $19</h3>
+                        <p>Sun cream provides essential protection from harmful UV rays, preventing sunburn and skin
+                            damage while helping maintain healthy, youthful skin.</p><a href="./Phar-pay.html"><i
+                                class="fa fa-shopping-cart" aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-areaa">
+                    <p class="top"><b>Body Lotion 180g</b></p>
+                    <img class="one" src="./images/pharmacy/m1.png" alt="Body Lotion 180g">
+                    <div class="overlay">
+                        <h3>Unit Price $28</h3>
+                        <p>Body lotion hydrates and smooths the skin, improving texture and elasticity while providing
+                            essential moisture and a lasting, comfortable feel.</p><a href="./Phar-pay.html"><i
+                                class="fa fa-shopping-cart" aria-hidden="true"> Buy</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="see"><b>see more</b> <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+</body>
+
+<!--footer-->
+<footer>
+    <div class="container1">
+        <div class="row">
+            <div class="col" id="company">
+                <a href="./Index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+                <p>
+                    With International accreditation for Patient Safety and Care,
+                    the Genesis Health Group is the leading private healthcare provider in Sri Lanka.
+                    Our unwavering commitment to compassionate patient care,
+                    innovation & outstanding patient outcomes has earned us the high position of trust we enjoy.
+                </p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col" id="services">
+                <a href="./Srevices.html" style="text-decoration: none;">
+                    <h3>Services</h3>
+                </a>
+                <div class="links">
+                    <a href="#">HEALTHCARE SERVICES</a>
+                    <a href="#">FACILITIES & AMENITIES</a>
+                    <a href="#">HEALTH & WELLNESS</a>
+                    <a href="#">AGRAHARA</a>
+                </div>
+            </div>
+
+            <div class="col" id="useful-links">
+                <a href="./Branches.html" style="text-decoration: none;">
+                    <h3>GENESIS GROUP</h2>
+                </a>
+                <div class="links">
+                    <a href="./Branches.html">Colombo</a>
+                    <a href="./Branches.html">Kandy</a>
+                    <a href="./Branches.html">Kurunagal</a>
+                    <a href="./Branches.html">Gall</a>
+                </div>
+            </div>
+
+            <div class="col" id="contact">
+                <h3>Contact</h2>
+                    <div class="contact-details">
+                        <i class="fa fa-location"></i>
+                        <p>GENESIS colombo <br>
+                            main branch</p>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa fa-phone"></i>
+                        <p>+94-87 558 5685</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--copyright statement-->
+    <div>
+        <p class="rights">
+            &copy; 2024 GENESIS HOSPITAL. All rights reserved.
+        </p>
+    </div>
+    <!--back to top button-->
+    <div>
+        <a href="" class="back-to-top">
+            <span class="material-icons"> <img class="scroll" src="./images/scroll.png"></span>
+        </a>
+    </div>
+</footer>
+<!-- source
+  https://asirihealth.com/(asiri health)
+  https://www.remove.bg/upload(removebg)
+  -->
+
+</html>

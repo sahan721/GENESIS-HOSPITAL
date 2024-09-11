@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00385b">
+  <meta name="msapplication-TileColor" content="#00385b">
+  <meta name="theme-color" content="#00385b">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./Payments.css">
+  <link rel="stylesheet" href="./Reset_style_sheet.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,400;0,500;0,700;0,900;1,100;1,200;1,400;1,500;1,700;1,900&display=swap">
+  <title>PAYMENTS</title>
+</head>
+<header>
+  <!--menu-->
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w2.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+            <path
+              d="m249 849-42-42 221-221-221-221 42-42 221 221 221-221 42 42-221 221 221 221-42 42-221-221-221 221Z" />
+          </svg></a></li>
+      <li><a href="./Index.html">Home</a></li>
+      <li><a href="./Aboutus.html">About Us</a></li>
+      <li><a href="./Srevices.html">Services</a></li>
+      <li><a href="./Doctors.html">Doctors</a></li>
+      <li><a href="./Reservation.html">Reservations</a></li>
+      <li><a href="./Pharmacy.html">Pharmacy</a></li>
+      <li><a href="#">Payments</a></li>
+    </ul>
+    <ul>
+      <li></li>
+      <li class="hideOnMobile"><a href="./Index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="./Aboutus.html">About Us</a></li>
+      <li class="hideOnMobile"><a href="./Srevices.html">Services</a></li>
+      <li class="hideOnMobile"><a href="./Doctors.html">Doctors</a></li>
+      <li class="hideOnMobile"><a href="./Reservation.html">Reservations</a></li>
+      <li class="hideOnMobile"><a href="./Pharmacy.html">Pharmacy</a></li>
+      <li class="hideOnMobile"><a href="./Payments.html">Payments</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w2.org/2000/svg" height="26"
+            viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg></a></li>
+    </ul>
+  </nav>
+
+  <<!--logo-->
+    <section class="logo">
+      <a href="./Index.html"><img src="./images/logo.png"></a>
+    </section>
+
+    <!--search bar-->
+
+    <section class="box">
+
+
+      <input type="search" placeholder="search...">
+      <form action="https://www.google.com/search" method="get" class="search-bar">
+        <a type="submit">
+          <img src="./images/search.png">
+        </a>
+      </form>
+    </section>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+</header>
+
+<body>
+  <div class="container">
+
+    <form action="">
+
+      <div class="row">
+
+        <div class="col">
+
+          <h3 class="title">billing address</h3>
+
+          <div class="inputBox">
+            <span>full name :</span>
+            <input type="text" placeholder="name1 name2">
+          </div>
+          <div class="inputBox">
+            <span>email :</span>
+            <input type="email" placeholder="example@example.com">
+          </div>
+          <div class="inputBox">
+            <span>address :</span>
+            <input type="text" placeholder="room - street - locality">
+          </div>
+          <div class="inputBox">
+            <span>city :</span>
+            <input type="text" placeholder="city">
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>state :</span>
+              <input type="text" placeholder="country">
+            </div>
+            <div class="inputBox">
+              <span>zip code :</span>
+              <input type="text" placeholder="------">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col">
+
+          <h3 class="title">payment</h3>
+
+          <div class="inputBox">
+            <span>cards accepted :</span>
+            <img src="./images/payment.png" alt="cards">
+          </div>
+          <div class="inputBox">
+            <span>name on card :</span>
+            <input type="text" placeholder="mr.name">
+          </div>
+          <div class="inputBox">
+            <span>credit card number :</span>
+            <input type="number" placeholder="2222-2222-3333-4444">
+          </div>
+          <div class="inputBox">
+            <span>exp month :</span>
+            <input type="text" placeholder="month">
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>exp year :</span>
+              <input type="number" placeholder="year">
+            </div>
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="text" placeholder="****">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <input type="submit" value="proceed to checkout" class="submit-btn">
+
+
+    </form>
+
+  </div>
+</body>
+<!--footer-->
+<footer>
+  <div class="container1">
+    <div class="row">
+      <div class="col" id="company">
+        <a href="./Index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+        <p>
+          With International accreditation for Patient Safety and Care,
+          the Genesis Health Group is the leading private healthcare provider in Sri Lanka.
+          Our unwavering commitment to compassionate patient care,
+          innovation & outstanding patient outcomes has earned us the high position of trust we enjoy.
+        </p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col" id="services">
+        <a href="./Srevices.html" style="text-decoration: none;">
+          <h3>Services</h3>
+        </a>
+        <div class="links">
+          <a href="#">HEALTHCARE SERVICES</a>
+          <a href="#">FACILITIES & AMENITIES</a>
+          <a href="#">HEALTH & WELLNESS</a>
+          <a href="#">AGRAHARA</a>
+        </div>
+      </div>
+
+      <div class="col" id="useful-links">
+        <a href="./Branches.html" style="text-decoration: none;">
+          <h3>GENESIS GROUP</h2>
+        </a>
+        <div class="links">
+          <a href="./Branches.html">Colombo</a>
+          <a href="./Branches.html">Kandy</a>
+          <a href="./Branches.html">Kurunagal</a>
+          <a href="./Branches.html">Gall</a>
+        </div>
+      </div>
+      <div class="col" id="contact">
+        <h3>Contact</h2>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>GENESIS colombo <br>
+              main branch</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+94-87 558 5685</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--copyright statement-->
+  <div>
+    <p class="rights">
+      &copy; 2024 GENESIS HOSPITAL. All rights reserved.
+    </p>
+  </div>
+  <!--back to top button-->
+  <div>
+    <a href="#" class="back-to-top">
+      <span class="material-icons"> <img class="scroll" src="./images/scroll.png"></span>
+    </a>
+  </div>
+</footer>
+
+</html>
